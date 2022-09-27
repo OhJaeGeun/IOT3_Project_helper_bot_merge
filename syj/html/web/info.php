@@ -54,30 +54,26 @@
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
     allowfullscreen></iframe>
 
-    <!-- <h1><a id="t2">SKILL</a></h1> -->
-    <img id="t4"src = "003.png" style="width:80%; height:auto;" alt></img>
-    
-    <!-- <h1><a id="t3">GUI</a></h1>
-    <t>1.이상감지시 발생한 재난사항에 따라 스크린 변경
-      <br>2.터치스크린을 이용한 사용자의 직접 조작
-      <br>3.하단 status bar에서 이상감지 data를 직접 확인<br></t> -->
+	<!--gui-->
+    <img id="t4"src = "003.png" style="width:80%; height:auto; margin-" alt></img>
       <img src = "Peek 2022-09-05 12-31.gif" style="width:80%; height:auto;" alt></img>
       <t><br>▲ 사용예시 gif</t>
       <br>
 
-      <img id="t5"src = "003 (1).png" style="width:80%; height:auto;" alt></img>
+      <img id="t5"src = "003 (1).png" style="width:80%; height:auto; margin-top:100px" alt></img>
 	
 	<!--S/W flow chart-->
       <img src = "003 (2).png" style="width:80%; height:auto; margin-top:100px" alt></img>
-      <img src="hwdia.png" style="width:70%; height:auto;" ></img>
+      <img src="hwdia.png" style="width:70%; height:auto;" ></img><t><br>▲H/W 구조도<br></t>
+      <img src="swdia.png" style="width:70%; height:auto; margin-top:100px" ></img><t><br>▲S/W 구조도<br></t>
       
 	<!-- H/W diagram -->
       <img src = "003 (3).png" style="width:80%; height:auto; margin-top:100px; margin-bottom:20px " alt></img>
-      <img src="32325.drawio.png" style="width:70%; height:auto;" ></img>
+      <img src="helper-bot-flow.png" style="width:70%; height:auto;" ></img>
 	
 	<!--회로도-->
       <img src = "003 (4).png" style="width:80%; height:auto; margin-top:100px; margin-bottom:20px" alt></img>
-      <img src="hwdia.png" style="width:70%; height:auto;" ></img>
+      <img src="Helper Bot_1.jpg" style="width:70%; height:auto;" ></img>
   </div>
 </div>
 </body>

@@ -7,16 +7,14 @@
 </head> 
 
 <body> 
-    <h1>ROSDS의 안녕하세요!</h1> 
-    
-    <p>첫 번째 웹페이지에서 rosbridge와 소통하세요.</p> 
     
 <?php
    // include 'abn.php';
     $run = 0;  #DB에서 select한 이상감지 데이터가 있을때 js로 변수 전달
     if($abn_acc=='abn_acc') $run = 1;
     if($abn_fire=='abn_fire') $run = 2;
-    if($abn_sensor=='abn_sensor') $run = 3;
+    if($abn_done=='abn_done') $run = 3;
+   // echo "3232 : " , $run;
     ?>
 
 <script type="text/javascript">
@@ -24,8 +22,8 @@
     var jrun = <?php echo $run; ?>;
     //웹서버(php)로 부터 변수를 받아옴
     //https://rateye.tistory.com/1158
-    //var jrun = 1;
-// ROS와 connect 및 확인
+    
+    // ROS와 connect 및 확인
     var ros = new ROSLIB.Ros({ 
     url : 'ws://192.168.137.246:9090'
 });
@@ -46,7 +44,7 @@ var goal = new ROSLIB.Topic({
     name : '/move_base/goal', // /cmd_vel
     messageType : 'move_base_msgs/MoveBaseGoal' // 'geometry_msgs/Twist'
 })
-
+//var jrun=2;
 switch (jrun) {
 
     case 1: //사람쓰러졌을때(카메라 앞)
@@ -58,14 +56,14 @@ switch (jrun) {
                     },
                     pose: {
                         position: {
-                            x : 4.66,
-                            y : 0.8,
+                            x : 4.24,
+                            y : 0.89,
                             z : 0.0
                         },
                         orientation: {
                             x : 0.0,
                             y : 0.0,
-                            z :0.0,
+                            z : 0.0,
                             w : 1.0
                         }
                     }

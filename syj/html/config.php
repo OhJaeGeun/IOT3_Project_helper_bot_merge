@@ -1,6 +1,5 @@
 <?php
-//ini_set('display_errors',1);
-error_reporting(E_ALL);
+//error_reporting(E_ALL);
 // 데이터 베이스 연결을 위한 파일
 // DB연동이 필요한 파일에 include 'config.php' 입력해서 사용;
 

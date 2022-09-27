@@ -28,15 +28,20 @@
   <div style="TEXT-ALIGN:CENTER">
 
   <img src = "cctv_4.png" style="width:80%; height:auto;"></img>
-  
-      <iframe src="http://192.168.1.179:8090/?action=stream" style="width:100%; height:500px;margin-top:10px;margin-bottom:10px;"></iframe>
+	
+	<!--상황이 종료되었을때 초기화시키는 버튼-->
+  <iframe name="iframe" style="display:none;"></iframe>
+    <form action="http://20.200.177.121/query.php" method="post" target="iframe">
+<input type="hidden" name="type" value="done">
+<input type="hidden" name="val" value=3>
+      <button type="submit" style="width:30%; height:40px; margin : 10px">completion</button>
+    </form>
 
+    <iframe src="http://192.168.1.179:8090/?action=stream" style="width:100%; height:500px;margin-top:10px;margin-bottom:10px;"></iframe>
       
-      <iframe src="http://20.200.177.121:3000/d-solo/f4DcuMn4z/cam_data_acc?orgId=1&from=1663298544506&to=1663298576673&panelId=4"
-            style="width:49%; height:250px; float:left;"></iframe> 
+      <iframe src="http://20.200.177.121:3000/d-solo/f4DcuMn4z/cam_data_acc?orgId=1&refresh=5s&panelId=2"style="width:49%; height:250px; float:left;"></iframe> 
 
-      <iframe src="http://20.200.177.121:3000/d-solo/f4DcuMn4z/cam_data_acc?orgId=1&from=1663298544506&to=1663298576673&panelId=2"
-            style="width:49%; height:250px; float:right;"></iframe> 
+      <iframe src="http://20.200.177.121:3000/d-solo/f4DcuMn4z/cam_data_acc?orgId=1&refresh=5s&panelId=4"style="width:49%; height:250px; float:right;"></iframe> 
       <!-- https://ojji.wayful.com/2013/12/HTML-set-Two-Parallel-DIVs-columns.html -->
   <img src = "cctv (2).png" style="width:100%; height:auto;"></img>
     </div>

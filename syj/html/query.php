@@ -6,8 +6,8 @@ date_default_timezone_set('Asia/Seoul'); //시간설정
 $pdate = date('Y-m-d H:i:s');
 
 //data(sensor)
-$ptype ='test';// $_POST['type'];
-$pval = 44;//$_POST['val'];
+$ptype = $_POST['type'];
+$pval = $_POST['val'];
 
 //cam_data
 $plabel = $_POST['label'];
